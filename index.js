@@ -23,13 +23,15 @@ return result;
 }
 johnLennonFacts(facts); 
 
-function iLoveTheBeatles(number) { 
-  
-let newArray = []; 
-do {
-newArray.push(`I love the Beatles!`); //this will happen one time, whether or not number meets condition below
-number++; //increment number of times string above is pushed into newArray
-} while (number < 15); //(that number subracted from 15 will be the output number of times the string is logged); 
 
-return newArray; // this needs to be outside the loop, otherwise only first item will be returned
+function iLoveTheBeatles(number) { 
+let newArray = []; 
+
+do {
+newArray.push(`I love the Beatles!`);
+
+number++; 
+
+} while (number < 15); 
+return newArray;
 }
